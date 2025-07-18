@@ -26,7 +26,6 @@ app.get("/", function(req, res){
 app.use(static)
 
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
 app.use(expressLayouts);
 app.set("layout", "./layouts/layout") // not at views root
 
